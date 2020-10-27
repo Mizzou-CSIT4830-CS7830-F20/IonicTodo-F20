@@ -14,13 +14,21 @@ import { DataService } from "src/app/services/data.service";
 export class TodoPage implements OnInit {
 
   private todoForm: FormGroup;
-  todoArray = [];
+  todoArray: Todo[] = [];
 
   constructor(private formBuilder: FormBuilder, private model: DataService) {
     this.todoForm = this.formBuilder.group({
       todo: ["", Validators.required],
       done: false
     });
+
+    // this needs to be updated for challenge ... accessing the ionic storage
+    //  must be in the model 
+    this.model.getData("todos").then((todos) => {
+      if (todos) {
+        this.todoArray = todos; 
+      }
+    }); 
   }
 
   ngOnInit() {
