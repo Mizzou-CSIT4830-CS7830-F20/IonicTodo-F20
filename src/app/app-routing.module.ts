@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'todo',
+    loadChildren: () => import('./pages/todo/todo.module').then( m => m.TodoPageModule)
+  },
 ];
 
 @NgModule({
