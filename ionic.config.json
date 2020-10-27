@@ -1,7 +1,0 @@
-{
-  "name": "IonicTodo",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
