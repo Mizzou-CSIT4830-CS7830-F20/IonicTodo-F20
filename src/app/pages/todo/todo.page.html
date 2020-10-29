@@ -15,13 +15,20 @@
 
     <!-- <ion-button expand="full" (click)="addTodo(todoForm.value.todo)" [disabled]="!todoForm.valid">Add</ion-button> -->
 
-    <ion-item>{{ todoArray.length }} Todos Remaining</ion-item>
+    <ion-item>{{ remaining() }} of {{ todoArray.length }} Todos Remaining</ion-item>
 
+    <!-- formControlName="done" -->
     <ion-list *ngFor="let myTodo of todoArray">
       <ion-item>
+        <!-- <ion-checkbox (click)="refresh(this)" [(ngModel)]="myTodo.done" [ngModelOptions]="{standalone: true}"> -->
+        <!-- </ion-checkbox> -->
         {{myTodo.todo}}
         <ion-icon name="close" (click)="deleteItem(myTodo)"></ion-icon>
       </ion-item>
     </ion-list>
+
+
+    <ion-button expand="full" color="warning" (click)="archive()">Clear Completed</ion-button>
+    <ion-button expand="full" color="danger" (click)="removeAll()">Clear All</ion-button>
   </form>
 </ion-content>

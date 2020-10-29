@@ -41,4 +41,37 @@ export class TodoPage implements OnInit {
   deleteItem(todo) {
     this.todoArray = this.model.deleteItem(todo); 
   }
+
+  remaining() {
+    return this.model.remaining(); 
+  }
+
+  removeAll() {
+    this.todoArray = this.model.removeAll(); 
+  }
+
+  archive() {
+    this.model.archive(); 
+  }
+
+  refresh(checked) {
+    console.dir(checked); 
+
+    console.dir(this.todoArray); 
+
+    // this.todoArray = this.model.refresh(this.todoArray); 
+
+    // console.dir(this.todoArray); 
+
+    console.dir(this.model.todoArray)
+    
+    // console.dir(this.todoForm.value); 
+
+    // this.model.getData("todos").then((todos) => {
+    //   if (todos) {
+    //     console.dir(todos); 
+    //   }
+    // }); 
+
+  }
 }

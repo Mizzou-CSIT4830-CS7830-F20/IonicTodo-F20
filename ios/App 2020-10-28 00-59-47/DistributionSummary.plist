@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>App.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>8C62DF6AB2A0832B3BB965CE455E35B0ECB78987</string>
+				<key>dateExpires</key>
+				<string>10/28/21</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8C62DF6AB2A0832B3BB965CE455E35B0ECB78987</string>
+						<key>dateExpires</key>
+						<string>10/28/21</string>
+						<key>type</key>
+						<string>Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Capacitor.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>JNC582N52M</string>
+						<key>name</key>
+						<string>Streamline Technology Company, LLC.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8C62DF6AB2A0832B3BB965CE455E35B0ECB78987</string>
+						<key>dateExpires</key>
+						<string>10/28/21</string>
+						<key>type</key>
+						<string>Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Cordova.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>JNC582N52M</string>
+						<key>name</key>
+						<string>Streamline Technology Company, LLC.</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>JNC582N52M.com.streamlineai.todo2</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>JNC582N52M</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>JNC582N52M.com.streamlineai.todo2</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>App.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>634ded87-fb59-4c94-9879-366c033e7fa9</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.streamlineai.todo2</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>JNC582N52M</string>
+				<key>name</key>
+				<string>Streamline Technology Company, LLC.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
